@@ -37,12 +37,3 @@ def append_rows_to_sheet(sheet_id, worksheet_name, creds_json, new_rows):
     # 5. Push the new data to Google Sheets
     set_with_dataframe(worksheet, updated_df)
     return updated_df
-
-# Example usage:
-# creds_json = 'path/to/credentials.json'
-# sheet_id = 'your_google_sheet_id'
-# worksheet_name = 'Sheet1'
-# df1 = ... # Your local DataFrame from main()
-# df_sheet = read_google_sheet(sheet_id, worksheet_name, creds_json)
-# new_rows = get_new_rows(df1, df_sheet)
-# append_rows_to_sheet(sheet_id, worksheet_name, creds_json, new_rows)
